@@ -56,15 +56,13 @@
     height: 45%;
 }
 
-.main-profile-avatar {
-    margin-bottom: auto;
-    margin-top: auto;
+img {
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 140px;
-    height: 140px;
-    border-radius: 70px;
-    vertical-align: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
 }
 
 .main-profile-intro {
