@@ -1,0 +1,72 @@
+.bar1, .bar2, .bar3 {
+    width: 48px;
+    height: 5.5px;
+    background-color: #ffffff;
+    margin: 10.5px 19px;
+    transition: 1s;
+}
+  
+.optionMenu-dropcontent {
+    display: table-cell;
+    background: hsla(209, 96%, 44%, 0.767);
+    min-width: 120px;
+    position: fixed;
+    height: 100%;
+    left: 0px;
+    top: 0px
+}
+  
+.optionMenu-dropcontent a{
+    display: block;
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 12.5pt;
+    color: white;
+    text-decoration: none;
+}
+
+.ButtonFont {
+    font-family: 'Arial';
+    font-size: 21;
+    transition: 1s;
+}
+
+.main-profile-frame {
+    color: white;
+    transition: 2s;
+    font-size: 18px;
+    font-family: 'Arial';
+    text-align: center;
+}
+
+.main-profile-table {
+    margin-left: 112px;
+}
+
+.main-profile-about{
+    font-size: 17px;
+    text-align: justify;
+    font-family: 'Arial';
+}
+
+.main-profile-background {
+    background-image: url(./personal-frame-background.jpeg);
+    width: 100%;
+    height: 35%;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+}
+
+.main-profile-intro {
+    position: relative;
+    top: 25%;
+}
