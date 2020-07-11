@@ -68,8 +68,6 @@
 }
 
 .main-profile-intro {
-    margin-bottom: auto;
-    margin-top: auto;
-    margin-left: auto;
-    margin-right: auto;
+    position: relative;
+    top: 25%;
 }
