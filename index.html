@@ -3,51 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rudy Yuen</title>
+    <meta name="description" content="Rudy Yuen is an eFX Quant Researcher and Trader pursuing a part-time PhD at the University of Hong Kong.">
+    <meta name="theme-color" content="#f5f5f0">
+    <title>Rudy Yuen — eFX Quant &amp; PhD Researcher</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="sidebar" class="sidebar">
-        <div class="sidebar-content">
-            <h2>Rudy Yuen</h2>
-            <nav>
-                <ul>
-                    <li><a href="#about" class="active">About Me</a></li>
-                    <li><a href="#research">Projects & Research</a></li>
-                    <li><a href="docs/cv.pdf" target="_blank" id="cv-link">CV</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
+    <aside class="sidebar">
+        <a class="identity" href="#about" aria-label="Rudy Yuen, home">
+            <span class="monogram" aria-hidden="true">RY</span>
+            <span class="identity-copy">
+                <span class="identity-name">Rudy Yuen</span>
+                <span class="identity-role">eFX Quant · Part-time PhD</span>
+            </span>
+        </a>
+
+        <nav aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a class="nav-cv" href="#cv">CV</a>
+        </nav>
+
+        <p class="sidebar-note">Quantitative Trading · Machine Learning · Bioinformatics</p>
+    </aside>
+
     <main>
-        <section id="about" style="display:block;">
-            <h1>About Me</h1>
-            <hr>
-            <p>I am an eTrading Quant and a recent graduate in MEng Mathematics and Computer Science from University College London (UCL).</p>
-            <p>My studies are focused on Machine Learning and Statistics, and I am interested in learning more about Machine Learning, Quantitative Finance, Deep Learning and Computational Biology.</p>
+        <section class="hero" id="about" aria-labelledby="intro-title">
+            <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> eFX · Quantitative research</p>
+            <h1 id="intro-title">Rudy Yuen<span class="accent">.</span></h1>
+            <p class="hero-summary">eFX Quant Trader and Researcher while pursuing a part-time PhD at HKUMed.</p>
+            <p class="intro-detail">My interests span machine learning, statistics, quantitative finance, and computational biology.</p>
+            <a class="text-link" href="#cv">Explore my CV <span aria-hidden="true">↓</span></a>
         </section>
-        <section id="research">
-            <h1>Projects & Research</h1>
-            <hr>
-            <div class="publication">
-                <p><strong>Multiple Instance Transfer Learning on T cell receptor LLMs for Cancer Prediction</strong></p>
-                <p>M.Eng. Dissertation (Graded 80%)</p>
-                <p>
-                    <a href="docs/dissertation.pdf" target="_blank">Manuscript</a>
-                    <a href="https://github.com/RcwYuen/TCR-Cancer-Prediction/tree/main">GitHub</a>
-                </p>
+
+        <section class="content-section" id="cv" aria-labelledby="cv-title">
+            <div class="section-heading">
+                <p class="eyebrow">Experience · Education · Selected work</p>
+                <h2 id="cv-title">Curriculum Vitae</h2>
+            </div>
+
+            <div class="cv-groups">
+                <details class="cv-group" open>
+                    <summary>Experience</summary>
+                    <div class="cv-group-content">
+                        <article class="cv-entry">
+                            <div>
+                                <h3>Goldman Sachs</h3>
+                                <p class="cv-role">eFX Quantitative Trader &amp; Quantitative Strategist — TWC</p>
+                                <p class="cv-meta">Hong Kong SAR, China · May 2025 – Present</p>
+                            </div>
+                        </article>
+                        <article class="cv-entry">
+                            <div>
+                                <h3>Nomura</h3>
+                                <p class="cv-role">eFX Quantitative Researcher &amp; Quantitative Trader</p>
+                                <p class="cv-meta">London, United Kingdom · July 2024 – April 2025</p>
+                            </div>
+                        </article>
+                        <article class="cv-entry">
+                            <div>
+                                <h3>Nomura</h3>
+                                <p class="cv-role">eFX Quantitative Developer (Summer Intern — Return Offer Extended)</p>
+                                <p class="cv-meta">London, United Kingdom · June – August 2023</p>
+                            </div>
+                        </article>
+                    </div>
+                </details>
+
+                <details class="cv-group">
+                    <summary>Education</summary>
+                    <div class="cv-group-content">
+                        <article class="cv-entry">
+                            <div>
+                                <h3>Doctor of Philosophy · Bioinformatics</h3>
+                                <p class="cv-meta">LKS Faculty of Medicine · The University of Hong Kong</p>
+                                <p class="cv-detail">Part-time · September 2026 – Present</p>
+                                <p class="cv-detail">Supervisor: Professor Joshua K. Ho</p>
+                            </div>
+                        </article>
+                        <article class="cv-entry">
+                            <div>
+                                <h3>Master of Engineering · Computer Science &amp; Mathematics</h3>
+                                <p class="cv-meta">University College London · September 2020 – June 2024</p>
+                                <p class="cv-detail">Previously: Mathematical Computation</p>
+                                <p class="cv-detail">First-Class Honours</p>
+                            </div>
+                        </article>
+                    </div>
+                </details>
+
+                <details class="cv-group">
+                    <summary>Projects</summary>
+                    <div class="cv-group-content cv-projects">
+                        <article class="cv-project">
+                            <div class="project-content">
+                                <p class="project-type">MEng dissertation · 80%</p>
+                                <h3>Multiple instance transfer learning on T-cell receptor language models for cancer prediction</h3>
+                                <p class="project-description">Achieved over 99% out-of-sample AUC identifying Stage I–IIIa non-small cell lung cancer from peripheral T-cell receptor repertoires, and contributed interpretability insights for a subsequently published language model.</p>
+                                <div class="project-links">
+                                    <a class="button button-primary" href="docs/dissertation.pdf" target="_blank" rel="noopener noreferrer">Read the dissertation <span aria-hidden="true">↗</span></a>
+                                    <a class="button button-secondary" href="https://github.com/RcwYuen/TCR-Cancer-Prediction" target="_blank" rel="noopener noreferrer">View the code <span aria-hidden="true">↗</span></a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="cv-project">
+                            <div class="project-content">
+                                <p class="project-type">Research paper</p>
+                                <h3>Exploration of hypomyelination in extreme preterm infants through n-compartment models</h3>
+                                <p class="project-description">Applied constrained n-compartment models to study differences in myelin density between extreme preterm and typically developing infants through T2 relaxometry.</p>
+                                <div class="project-links">
+                                    <a class="button button-primary" href="docs/hypomyelination.pdf" target="_blank" rel="noopener noreferrer">Read the paper <span aria-hidden="true">↗</span></a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </details>
+
             </div>
         </section>
-        <section id="contact">
-            <h1>Contact</h1>
-            <hr>
-            <p><img src="https://media.licdn.com/dms/image/C560BAQHaVYd13rRz3A/company-logo_200_200/0/1638831590218/linkedin_logo?e=1723680000&v=beta&t=px3qCYOYDjGUOqiylz7LEi-bAdIuIwoHIcNNi1ErrkE" alt="LinkedIn Icon" class="icon"><a href="https://www.linkedin.com/in/rcwyuen">LinkedIn</a></p>
-            <p><img src="https://cdn-icons-png.flaticon.com/128/4902/4902208.png" alt="Email Icon" class="icon"><a href="mailto:zcabcry@ucl.ac.uk">Email</a></p>
-            <p><img src="https://media.licdn.com/dms/image/C560BAQFmuLSyL1nlPA/company-logo_200_200/0/1678231359043/github_logo?e=1723680000&v=beta&t=vUUTZ4-dwCNBAi9IIjkngbhxWc-gXZJaRtDxq7xVgHg" alt="GitHub Icon" class="icon"><a href="https://github.com/RcwYuen">GitHub</a></p>
+
+        <section class="content-section contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="section-heading">
+                <p class="eyebrow">Get in touch</p>
+                <h2 id="contact-title">Contact</h2>
+            </div>
+            <p class="contact-intro">Find me online or send me a message.</p>
+            <div class="contact-links">
+                <a href="mailto:rcwyuen@gmail.com"><span>Email</span><span class="contact-value">rcwyuen@gmail.com</span><span class="contact-arrow" aria-hidden="true">↗</span></a>
+                <a href="https://www.linkedin.com/in/rcwyuen"><span>LinkedIn</span><span class="contact-value">rcwyuen</span><span class="contact-arrow" aria-hidden="true">↗</span></a>
+                <a href="https://github.com/RcwYuen"><span>GitHub</span><span class="contact-value">RcwYuen</span><span class="contact-arrow" aria-hidden="true">↗</span></a>
+            </div>
         </section>
+
+        <footer>
+            <span>Rudy Yuen</span>
+            <a href="https://www.linkedin.com/in/rcwyuen" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            <a href="#about">Back to top ↑</a>
+        </footer>
     </main>
-    <script src="scripts.js"></script>
 </body>
 </html>
-
