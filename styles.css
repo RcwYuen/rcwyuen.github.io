@@ -49,6 +49,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background: #cfe0d0;
+    color: var(--ink);
+}
+
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 28px;
@@ -90,6 +95,10 @@ a:focus-visible {
     align-items: center;
     gap: 13px;
     text-decoration: none;
+}
+
+.identity:hover .identity-name {
+    color: var(--green);
 }
 
 .monogram {
@@ -297,6 +306,11 @@ p {
     font-family: var(--serif);
     font-size: 20px;
     list-style: none;
+    transition: background-color 160ms ease;
+}
+
+.cv-group summary:hover {
+    background: #fbfcf9;
 }
 
 .cv-group summary::-webkit-details-marker {
@@ -465,6 +479,13 @@ p {
     border-bottom: 1px solid var(--line);
     font-size: 14px;
     text-decoration: none;
+    transition: background-color 160ms ease, padding 160ms ease;
+}
+
+.contact-links a:hover {
+    padding-right: 8px;
+    padding-left: 8px;
+    background: #fbfcf9;
 }
 
 .contact-links a:hover .contact-value,
