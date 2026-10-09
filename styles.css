@@ -625,3 +625,15 @@ footer a:hover {
         transition-duration: 0.01ms !important;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    ::selection {
+        background: #486450;
+        color: #f2f7f3;
+    }
+
+    .cv-group summary:hover,
+    .contact-links a:hover {
+        background: #24352b;
+    }
+}
