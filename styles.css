@@ -386,8 +386,24 @@ p {
     font-size: clamp(20px, 2.2vw, 25px);
 }
 
-.cv-project .project-description {
+.project-abstract {
+    max-width: 600px;
     margin-bottom: 18px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.project-abstract summary {
+    color: var(--muted);
+    cursor: pointer;
+}
+
+.project-abstract summary::marker {
+    color: var(--green);
+}
+
+.project-abstract p {
+    margin: 12px 0 0;
 }
 
 .project-type {

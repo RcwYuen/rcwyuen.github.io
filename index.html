@@ -103,9 +103,12 @@
                             <div class="project-content">
                                 <p class="project-type">MEng dissertation · 80%</p>
                                 <h3>Multiple instance transfer learning on T-cell receptor language models for cancer prediction</h3>
-                                <p class="project-description">Achieved over 99% out-of-sample AUC identifying Stage I–IIIa non-small cell lung cancer from peripheral T-cell receptor repertoires, and contributed interpretability insights for a subsequently published language model.</p>
+                                <details class="project-abstract">
+                                    <summary>Used protein language model embeddings and multi-instance learning to classify lung cancer from T-cell receptor repertoires.</summary>
+                                    <p>In the early stages of cancer, T cells undergo proliferation as part of an immune response to eradicate cancer. Thus, tracking peripheral T cells in asymptomatic patients for early cancer prediction is possible. Previous attempts at constructing such a model represent T cell receptors (TCRs) numerically using physico-chemical properties and pairing with downstream classification algorithms. We argue that the accuracy can be improved when TCR representations are learnt using a pre-trained language model as language models create numerical representations for TCRs based on the amino acid sequence, whereas physico-chemical properties only encode TCRs based on individual amino acids. This article classifies symptomatic lung cancer patients from the TRACERx dataset and control patients to demonstrate that the output embeddings from pre-trained large protein language models are more expressive than physico-chemical properties. Using these pre-trained language model embeddings, we can achieve high classification performance between cancer and non-cancer repertoires, achieving 100% AUC on the test and evaluation set using a simple two-layered multi-instanced downstream classifier. Our results also propose that embeddings from language models are more expressive than physico-chemical properties in cancer prediction.</p>
+                                </details>
                                 <div class="project-links">
-                                    <a class="button button-primary" href="docs/dissertation.pdf" target="_blank" rel="noopener noreferrer">Read the dissertation <span aria-hidden="true">↗</span></a>
+                                    <a class="button button-primary" href="docs/dissertation.pdf" target="_blank" rel="noopener noreferrer">Read the paper as a PDF <span aria-hidden="true">↗</span></a>
                                     <a class="button button-secondary" href="https://github.com/RcwYuen/TCR-Cancer-Prediction" target="_blank" rel="noopener noreferrer">View the code <span aria-hidden="true">↗</span></a>
                                 </div>
                             </div>
@@ -114,9 +117,12 @@
                             <div class="project-content">
                                 <p class="project-type">Research paper</p>
                                 <h3>Exploration of hypomyelination in extreme preterm infants through n-compartment models</h3>
-                                <p class="project-description">Applied constrained n-compartment models to study differences in myelin density between extreme preterm and typically developing infants through T2 relaxometry.</p>
+                                <details class="project-abstract">
+                                    <summary>Used T2 MRI n-compartment models to investigate white-matter myelination in extreme preterm infants.</summary>
+                                    <p>Extreme Preterm Infants (EPTs) are known to have a decreased amount of myelin in their white matter regions compared to non-EPTs, which leads to complications with neurological growth during adolescence. It prompts an active research into their intercerebral structure through the use of T2 Magnetic Resonance Imaging (MRI). T2-weighted MRIs are captured by measuring the amplitude of echoes generated using specific echo techniques at fixed time intervals after the deactivation of a Radio-Frequency (RF) Magnetic Field. The relationship between the amplitude of these echo signals and the time after the RF pulse is deactivated is known to exhibit an exponential decay. In regions containing more than one tissue type, it has been seen to be more accurate to employ a multiple-compartment exponential decay model due to the fact that this approach takes into account the complex tissue compositions by assuming each tissue type contributes its own characteristic decay rate. As EPTs have a decreased amount of myelin in their brain, we hypothesise that the average compartments needed voxel-wise to model the white matter is lesser for an EPT than a non-EPT. This is because an EPT has fewer myelins within the white matter of their brain, meaning that there are lesser tissue types per voxel. We provided a counter-evidence towards this hypothesis through a simpler version of the experiments due to computational constraints. This counter-evidence has been shown using a one-tailed student’s T-Test.</p>
+                                </details>
                                 <div class="project-links">
-                                    <a class="button button-primary" href="docs/hypomyelination.pdf" target="_blank" rel="noopener noreferrer">Read the paper <span aria-hidden="true">↗</span></a>
+                                    <a class="button button-primary" href="docs/hypomyelination.pdf" target="_blank" rel="noopener noreferrer">Read the paper as a PDF <span aria-hidden="true">↗</span></a>
                                 </div>
                             </div>
                         </article>
